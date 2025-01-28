@@ -8,12 +8,12 @@ function TodoForm() {
     const add= (e)=>{
         e.preventDefault()
         if (!todo) return
-        addTodo({id:Date.now(),todo:todo,completed:false})
-        //The abv addTodo can be written as;
-        // id already de chuke he, app.jsx k addTodo me and \
-        // new syntax me field:value same h to todo:todo ko 
-        // todo b likh skte h 
+        // addTodo({id:prev.length+1,todo:todo,completed:false})
+        //The abv addTodo() can be written as;
         addTodo({todo,completed:false})
+        // id already de chuke he, app.jsx k addTodo me and 
+        // new syntax me field:value same h to todo:todo ko 
+        //  todo b likh skte h 
         setTodo('')
     }
     return (
